@@ -38,7 +38,7 @@ const GallaryHeading = ({ type, filterType }: HeadingProps) => {
     <div className="flex align-middle justify-between">
       {/* Heading */}
       <div className="flex bg-bluredColors px-4 py-2 mt-5 rounded-3xl gap-3">
-        {typesArray.map((location, index) => (
+        {typesArray.map((location) => (
           <div
             key={location}
             className={`cursor-pointer ${
