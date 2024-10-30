@@ -36,7 +36,7 @@ const HeroPage = () => {
 
   return (
     <div className="bg-custom-image bg-cover bg-center h-screen w-full">
-      <div className="mx-44">
+      <div className="mx-14">
         <Navbar />
 
         <div

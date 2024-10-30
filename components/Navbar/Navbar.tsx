@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 
@@ -33,14 +33,20 @@ const Navbar = () => {
     };
   }, []);
   return (
-    <div className="flex justify-center align-middle "> 
-      <div ref={targetRef} className={`flex justify-between gap-40 my-7 align-middle transition-opacity duration-[1500ms] ${isIntersecting ? "opacity-100" : "opacity-0"}`}>
+    <div className="flex justify-center ">
+      <div
+        ref={targetRef}
+        className={`flex justify-between gap-72  mt-7 align-middle transition-opacity duration-[1500ms] ${
+          isIntersecting ? "opacity-100" : "opacity-0"
+        }`}
+      >
         <div>
-          <h2 className="text-white font-bold text-sm">
+          <h2 className="text-white  mt-2 font-bold text-sm">
             <Link href={"#"}> NASSA</Link>
           </h2>
-        </div>
-        <div className="flex justify-center align-middle gap-12">
+        </div> 
+
+        <div className="flex justify-center mt-2  gap-12">
           <div>
             <h2 className="text-white font-normal text-sm">
               <Link href={"#"}>Home</Link>
@@ -67,10 +73,11 @@ const Navbar = () => {
             </h2>
           </div>
         </div>
+
         <div>
-            <button className="text-white font-normal text-sm bg-purple-500 py-2 p-4 rounded-2xl">
-                Connect Wallet
-            </button>
+          <button className="text-white font-normal text-sm bg-purple-500 py-2 p-4 rounded-2xl">
+            Connect Wallet
+          </button>
         </div>
       </div>
     </div>

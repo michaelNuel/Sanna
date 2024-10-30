@@ -1,37 +1,76 @@
-import React from 'react'
-
-const Cards = () => {
-  return (
-    <div className="container mx-auto p-4">
-    <div className="grid grid-cols-1 lg:grid-cols-5 gap-4">
-      {/* Left card (single column on large screens) */}
-      <div className="bg-blue-500 p-6 rounded-lg text-white lg:col-span-2">
-        <h2 className="text-xl text-white font-bold">Left Card</h2>
-        <p>Content for the left card.</p>
-      </div>
-
-      {/* Right cards (4 columns on large screens) */}
-      <div className="grid grid-cols-2 lg:grid-cols-2 gap-4 lg:col-span-3">
-        <div className="bg-green-500 p-6 rounded-lg text-white">
-          <h2 className="text-xl text-white font-bold">Card 1</h2>
-          <p>Content for card 1.</p>
-        </div>
-        <div className="bg-green-500 p-6 rounded-lg text-white">
-          <h2 className="text-xl  text-white font-bold">Card 2</h2>
-          <p>Content for card 2.</p>
-        </div>
-        <div className="bg-green-500 p-6 rounded-lg text-white">
-          <h2 className="text-xl text-white font-bold">Card 3</h2>
-          <p>Content for card 3.</p>
-        </div>
-        <div className="bg-green-500 p-6 rounded-lg text-white">
-          <h2 className="text-xl text-white font-bold">Card 4</h2>
-          <p>Content for card 4.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  )
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+interface CardProps {
+    id: number;
+  image: string;
+  title: string;
+  price: string;
+  location: string;
+  isPlaceholder?: boolean; // New prop to control the placeholder
 }
 
-export default Cards
+const Cards = ({
+    id,
+  image,
+  title,
+  price,
+  location,
+  isPlaceholder = false,
+}: CardProps) => {
+  return (
+    <Link href={`/item/${id} `} id={`${id}`}>
+      <div className="p-4 bg-cardColors h-full rounded-lg shadow-lg">
+        {isPlaceholder ? (
+          <div className="bg-gray-300 w-full h-20 rounded-lg"></div> // Placeholder styling
+        ) : (
+          <div className="perspective-container group">
+            <Image
+              src={image}
+              alt={title}
+              height={300}
+              width={300}
+              // className="w-full h-full animate-spin3d"
+            />
+          </div>
+        )}
+        <div className="flex flex-col gap-3">
+          <div>
+            <h3 className="mt-4 text-sm text-white font-semibold">{title}</h3>
+          </div>
+
+          <div>
+            <h3 className=" text-xs text-gray-600 ">{location}</h3>
+          </div>
+
+          <div className="flex gap-2">
+            <div>
+              <Image alt={"sol"} height={20} width={20} src={"/solana.svg"} />
+            </div>
+            <div>
+              <p className="text-purple-600 font-medium text-sm ">{price}</p>
+            </div>
+          </div>
+
+          <div className="flex flex-col">
+            <div className="bg-gray-900 w-full h-1 rounded-2xl"></div>
+
+            <div className="flex justify-between mt-2">
+              <div>
+                <h2 className="text-purple-600 font-thin text-xxs">
+                  OverAll Progress
+                </h2>
+              </div>
+
+              <div>
+                <h2 className="text-purple-600 font-thin text-xxs">0%</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Link>
+  );
+};
+
+export default Cards;

@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 import GallaryHeading from "./GallaryHeading";
-import Cards from "./Cards";
+import ParentBody from "./ParentBody";
 
 export enum locationstype {
   ALL = "All of Africa",
@@ -54,11 +54,10 @@ const GalleryCards = () => {
 
       <div>
          <GallaryHeading filterType={setTab} type={tab} />
+         <ParentBody type={tab} />
       </div>
 
-      <div>
-        <Cards />
-      </div>
+     
     </div>
   );
 };
