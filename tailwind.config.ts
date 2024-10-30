@@ -24,6 +24,7 @@ const config: Config = {
         "2/5": "13%",
       },
       width: {
+        "3/5": "45rem",
         "4/5": "65rem",
       },
       fontSize: {

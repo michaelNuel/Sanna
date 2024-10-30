@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer/Footer";
 import AboutMusuem from "@/components/ItemsPage/AbourMusuem/AboutMusuem";
 import ItemsAbout from "@/components/ItemsPage/ItemsAbout/ItemsAbout";
 import ItemsHeroPage from "@/components/ItemsPage/ItemsHeroPage/ItemsHeroPage";
@@ -11,6 +12,7 @@ const Item = async () => {
       <ItemsAbout />
       <AboutMusuem />
       <WhyDonate />
+      <Footer />
     </div>
   );
 };
