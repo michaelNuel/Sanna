@@ -13,13 +13,11 @@ interface CarouselItemData {
 }
 
 interface CarouselItemProps {
-  alt: string;
   title: string;
   description: string;
 }
 
 export const CarouselItem: React.FC<CarouselItemProps> = ({
-  alt,
   title,
   description,
 }) => {
