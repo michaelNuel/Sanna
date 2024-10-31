@@ -11,7 +11,6 @@ const Carousel = ({ items }: CarouselProps) => {
       {items.map((item) => (
         <CarouselItem
           key={item.id}
-          alt={item.text}
           title={item.text}
           description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim repellendus id veniam iure voluptatum hic quasi quis explicabo facere nostrum! Fugiat vero officia eveniet. Perferendis repellendus ips."
         />
