@@ -31,6 +31,19 @@ body {
   overflow-y: scroll; /* Ensures vertical scrolling */
 }
 
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Hide scrollbar */
+}
+
+/* For Firefox */
+.scrollbar-hide {
+  scrollbar-width: none; /* Hide scrollbar */
+}
+
+/* Optional: for IE and Edge (legacy) */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* Hide scrollbar */
+}
 
 /* .nft:nth-child(2) {
   transition-delay:200ms ;

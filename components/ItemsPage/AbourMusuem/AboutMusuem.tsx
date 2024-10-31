@@ -33,8 +33,10 @@ const AboutMusuem = () => {
       };
     }, []);
   return (
-    <div ref={targetRef} className={`mt-24 mx-12 flex justify-center gap-5 transition-opacity duration-[1500ms] ${isIntersecting ? "opacity-100" : "opacity-0"}`}>
-      <div className='bg-gray-400 h-[399px] w-[554px] px-[17rem] '></div>
+    <div ref={targetRef} className={`mt-24 mx-12 flex justify-center gap-16 transition-opacity duration-[1500ms] ${isIntersecting ? "opacity-100" : "opacity-0"}`}>
+      <div className='  '>
+        <Image alt='#' src={'/Musuem.svg'} height={6000} width={6000} />
+      </div>
 
       <div className='flex flex-col gap-3'>
        <div>

@@ -45,7 +45,7 @@ const GalleryCards = () => {
   }, []);
   const [tab, setTab] = useState<locationstype>(locationstype.ALL);
   return (
-    <div ref={targetRef} className={`border-white  bg-PrimaryColor rounded-3xl h-screen scale-100   duration-[1000ms] w-4/5 px-8 py-8 ${isIntersecting ? "opacity-100  " : "opacity-0 scale-75 "}`}>
+    <div ref={targetRef} className={`border-white  bg-PrimaryColor rounded-3xl h-screen scale-100   duration-[1000ms] w-5/6 px-8 py-8 ${isIntersecting ? "opacity-100  " : "opacity-0 scale-75 "}`}>
       <div>
         <h3 className="text-white">
           <Image alt="#" height={200} width={250} src={"/ArtFund.svg"} />

@@ -36,7 +36,7 @@ const ItemsHeroPage = () => {
   return (
     <div className=" overflow-hidden ">
       <Navbar />
-      <div ref={targetRef} className={`mt-7 flex justify-center gap-24 transition-opacity duration-[1500ms] ${isIntersecting ? "opacity-100": "opacity-0"}`}>
+      <div ref={targetRef} className={`mt-14 flex justify-center gap-24 transition-opacity duration-[1500ms] ${isIntersecting ? "opacity-100": "opacity-0"}`}>
         <div>
           <Image alt="art" src={"/ArtImage.svg"} height={540} width={580} />
         </div>

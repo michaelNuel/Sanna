@@ -21,11 +21,12 @@ const config: Config = {
       },
       spacing: {
         "1/5": "3%", // Custom spacing value for 20%
-        "2/5": "13%",
+        "2/5": "7%",
       },
       width: {
         "3/5": "45rem",
         "4/5": "65rem",
+        "5/6": "74rem",
       },
       fontSize: {
         // Add custom font sizes here

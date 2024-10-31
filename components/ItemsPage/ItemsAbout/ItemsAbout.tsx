@@ -55,10 +55,7 @@ const ItemsAbout = () => {
           </h3>
 
           <h3 className="text-white text-sm font-thin mt-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-            beatae officia ad facere sunt ipsum. Dolore optio quaerat,
-            cupiditate, veniam assumenda, suscipit eveniet odit nam architecto
-            repellendus accusantium! Error, quos.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum reiciendis architecto quo quod iusto fugiat ut optio unde. Vitae, voluptas amet quisquam est corporis eaque corrupti enim alias animi, nostrum ullam debitis quam? Quidem repudiandae aperiam quae, nostrum maiores doloremque alias veritatis accusantium tempora vero repellendus saepe quaerat blanditiis debitis reprehenderit, optio dolorem nam culpa unde ea ipsam iure eligendi explicabo animi! Ab nemo libero suscipit aspernatur officiis exercitationem! Magni consequatur molestiae eaque ad error dolorem animi id nam. Odit veniam, iusto mollitia inventore error odio at, qui repellendus sapiente debitis iste itaque et eos quo, velit ad modi cumque?
           </h3>
         </div>
       </div>

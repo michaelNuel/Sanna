@@ -30,7 +30,7 @@ const WhyDonate = () => {
   }, []);
 
   return (
-    <div className="mt-24 mx-12 grid place-content-center place-items-center">
+    <div className="mt-24 mb-24 mx-12 grid place-content-center place-items-center">
       <div
         ref={textRef}
         className={`grid place-content-center place-items-center transition-opacity duration-[1500ms] ${
@@ -72,6 +72,14 @@ const WhyDonate = () => {
             </div>
           )
         )}
+      </div>
+
+      <div ref={textRef} className={`mt-10  transition-opacity duration-[1500ms] ${
+          isTextInView ? "opacity-100" : "opacity-0"
+        }`}>
+        <button className="text-white text-sm bg-[#9747FF] px-4 py-3  rounded-3xl">
+          Get NFT Here
+        </button>
       </div>
     </div>
   );

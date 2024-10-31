@@ -4,7 +4,7 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="bg-black flex justify-center h-screen mt-10 ">
-      <div className="flex flex-col gap-8 p-10  w-3/5">
+      <div className="flex flex-col gap-8 p-10  w-4/5">
         <div className="flex flex-col gap-1">
           <div className="flex justify-center align-middle">
             <h3 className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-900 font-bold">
@@ -37,6 +37,28 @@ const Footer = () => {
             <div>
                 <Image alt="#" src={'/Github.svg'} height={40} width={40} />
             </div>
+        </div>
+
+        <div className="w-full h-1 bg-gradient-to-r from-black via-[#9747FF] to-black my-4"></div>
+
+        <div className="flex justify-between">
+          <div>
+            <h3 className="text-white opacity-20 text-xs ">@ 2024 Osuji Henry Chibukem. All rights reserved</h3>
+          </div>
+ 
+          <div className="flex justify-between gap-10">
+            <div>
+              <h3 className="text-white opacity-20 text-xs ">Terms</h3>
+            </div>
+
+            <div>
+              <h3 className="text-white opacity-20 text-xs ">Privacy</h3>
+            </div>
+
+            <div>
+              <h3 className="text-white opacity-20 text-xs ">Cookies</h3>
+            </div>
+          </div>
         </div>
       </div>
     </div>
