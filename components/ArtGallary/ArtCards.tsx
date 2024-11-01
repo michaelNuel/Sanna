@@ -5,11 +5,8 @@ import Carousel from "./Carousel";
 import { useAccount } from "wagmi";
 import Web3 from "web3";
 
-declare global {
-  interface Window {
-    ethereum?: any;
-  }
-}
+
+
 
 const companyWalletAddress = "0x9dEAb59c4Ba74d49458ea74Ff615Ff3b43393203";
 
@@ -201,7 +198,7 @@ const ArtCards = ({ type }: Props) => {
       console.log("Transaction sent! Hash:", txHash.transactionHash);
       alert("Transaction successful! Hash: " + txHash.transactionHash);
     } catch (error) {
-      console.error("Transaction failed:");
+      console.error("Transaction failed:", error);
       alert("Transaction failed: ");
     }
   };
