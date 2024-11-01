@@ -132,44 +132,47 @@ const ProjectOverview = () => {
               )}
             </div>
 
-            <div className="flex flex-col">
-              <label className="text-white text-sm mb-2">Start Date</label>
-              <Controller
-                name="startDate"
-                control={control}
-                render={({ field }) => (
-                  <input
-                    {...field}
-                    type="date"
-                    className="input-style bg-[#1E1E1E] py-3 pl-2 rounded-3xl"
-                  />
+            <div className="flex justify-between"> 
+              <div className="flex w-72 flex-col">
+                <label className="text-white text-sm mb-2">Start Date</label>
+                <Controller
+                  name="startDate"
+                  control={control}
+                  render={({ field }) => (
+                    <input
+                      {...field}
+                      type="date"
+                      className="input-style bg-[#1E1E1E] py-3 pl-2 rounded-3xl"
+                    />
+                  )}
+                />
+                {errors.startDate && (
+                  <p className="text-red-500 text-xs">
+                    {errors.startDate.message}
+                  </p>
                 )}
-              />
-              {errors.startDate && (
-                <p className="text-red-500 text-xs">
-                  {errors.startDate.message}
-                </p>
-              )}
-            </div>
+              </div>
 
-            <div className="flex flex-col">
-              <label className="text-white text-sm mb-2">End Date</label>
-              <Controller
-                name="endDate"
-                control={control}
-                render={({ field }) => (
-                  <input
-                    {...field}
-                    type="date"
-                    className="input-style bg-[#1E1E1E] py-3 pl-2 rounded-3xl"
-                  />
+              <div className="flex w-72 flex-col">
+                <label className="text-white text-sm mb-2">End Date</label>
+                <Controller
+                  name="endDate"
+                  control={control}
+                  render={({ field }) => (
+                    <input
+                      {...field}
+                      type="date"
+                      className="input-style bg-[#1E1E1E] py-3 pl-2 rounded-3xl"
+                    />
+                  )}
+                />
+                {errors.endDate && (
+                  <p className="text-red-500 text-xs">
+                    {errors.endDate.message}
+                  </p>
                 )}
-              />
-              {errors.endDate && (
-                <p className="text-red-500 text-xs">{errors.endDate.message}</p>
-              )}
+              </div>
             </div>
-
             <div className="flex flex-col">
               <label className="text-white text-sm mb-2">
                 Research Community
@@ -194,7 +197,7 @@ const ProjectOverview = () => {
 
             <div className="flex justify-between align-middle">
               <div>
-              <button
+                <button
                   type="submit"
                   onClick={handleBack}
                   className="mt-4 bg-purple-500 text-white px-6 py-2 rounded-2xl"
@@ -202,7 +205,7 @@ const ProjectOverview = () => {
                   Back
                 </button>
               </div>
-              <div> 
+              <div>
                 <button
                   type="submit"
                   className="mt-4 bg-purple-500 text-white px-6 py-2 rounded-2xl"

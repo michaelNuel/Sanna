@@ -89,7 +89,7 @@ const FundingRequest = () => {
             </div>
 
             <div className="flex flex-col">
-              <label className="text-white text-sm mb-2">Funding Wallet</label>
+              <label className="text-white text-sm mb-2">Submit Funding Wallet</label>
               <Controller
                 name="fundingWallet"
                 control={control}

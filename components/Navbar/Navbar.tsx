@@ -1,5 +1,5 @@
 "use client";
-import { ConnectButton } from "@rainbow-me/rainbowkit";
+import { ConnectButton, darkTheme } from "@rainbow-me/rainbowkit";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
@@ -115,7 +115,15 @@ const Navbar = () => {
         </div>
 
         <div>
-            <ConnectButton />
+            <ConnectButton 
+              theme={darkTheme({
+                accentColor: '#7b3fe4',
+                accentColorForeground: 'white',
+                borderRadius: 'small',
+                fontStack: 'system',
+                overlayBlur: 'small',
+              })}
+            />
         </div>
       </div>
     </div>

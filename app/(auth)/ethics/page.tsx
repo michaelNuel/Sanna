@@ -41,7 +41,7 @@ const Ethics = () => {
     // Handle form submission
     const handleNext: SubmitHandler<ProjectDetailsFormData> = (data) => {
         setFormData({ ...formData, ...data });
-        router.push("/supporting-documents"); // Change to your desired route
+        router.push("/#"); // Change to your desired route
     };
 
     // Handle back navigation
@@ -53,7 +53,7 @@ const Ethics = () => {
         <div className="flex h-screen w-screen">
             <div className="bg-custom-image bg-cover h-screen bg-center w-full"></div>
             <div className="bg-PrimaryColor h-screen w-full flex flex-col overflow-hidden">
-                <div className="flex flex-col mx-10 my-10 gap-2 overflow-y-auto h-full scrollbar-hide">
+                <div className="flex flex-col mx-11 my-10 gap-2 overflow-y-auto h-full scrollbar-hide">
                     <div>
                         <Image
                             alt="Project Overview Icon"
