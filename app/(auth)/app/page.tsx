@@ -46,7 +46,7 @@ const Application = () => {
   // Function to handle form submission
   const handleNext = (data: AppFormData) => {
     setFormData({ ...formData, ...data });
-    router.push("/blockchain-data-management"); // Update this to the next route you need
+    router.push("/project-overview"); // Update this to the next route you need
   };
 
 
@@ -69,7 +69,7 @@ const Application = () => {
             className="flex flex-col gap-4 mt-8"
           >
             <div className="flex flex-col">
-              <label className="text-white text-sm mb-2">Total Funding</label>
+              <label className="text-white text-sm mb-2">Full Name</label>
               <Controller
                 name="fullName"
                 control={control}
@@ -89,7 +89,7 @@ const Application = () => {
             </div>
 
             <div className="flex flex-col">
-              <label className="text-white text-sm mb-2">Funding Wallet</label>
+              <label className="text-white text-sm mb-2">Email </label>
               <Controller
                 name="email"
                 control={control}
@@ -109,7 +109,7 @@ const Application = () => {
             </div>
 
             <div className="flex flex-col">
-              <label className="text-white text-sm mb-2">Budget Allocation</label>
+              <label className="text-white text-sm mb-2">Contact/Info</label>
               <Controller
                 name="contact"
                 control={control}
@@ -129,7 +129,7 @@ const Application = () => {
             </div>
 
             <div className="flex flex-col">
-              <label className="text-white text-sm mb-2">Other Sources</label>
+              <label className="text-white text-sm mb-2">Position/Title</label>
               <Controller
                 name="position"
                 control={control}
@@ -148,7 +148,7 @@ const Application = () => {
               )}
             </div>
             <div className="flex flex-col">
-              <label className="text-white text-sm mb-2">Other Sources</label>
+              <label className="text-white text-sm mb-2">Institution/Organization</label>
               <Controller
                 name="institution"
                 control={control}
