@@ -116,13 +116,6 @@ const Navbar = () => {
 
         <div>
             <ConnectButton 
-              theme={darkTheme({
-                accentColor: '#7b3fe4',
-                accentColorForeground: 'white',
-                borderRadius: 'small',
-                fontStack: 'system',
-                overlayBlur: 'small',
-              })}
             />
         </div>
       </div>
