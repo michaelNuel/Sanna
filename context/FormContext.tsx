@@ -2,8 +2,8 @@
 import { createContext, useContext, useState, ReactNode } from 'react';
 
 interface FormData {
-  fullName?: string;
-  email?: string;
+  fullName: string;
+  email: string;
   contact: string;
   position: string;
   institution:string;
