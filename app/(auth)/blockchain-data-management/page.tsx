@@ -112,9 +112,7 @@ const Page = () => {
             <div className="flex flex-col">
               <label className="text-white text-sm mb-2">
                 Expected Impact and Public Access{" "}
-                <span className="text-sm font-mono italic">
-                  (if there are other sources of funding within the Web3 ecosystem, e.g., DAOs, grants, partnerships)
-                </span>
+              
               </label>
               <Controller
                 name="accessEducation"
