@@ -1,9 +1,11 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 
 const Navbar = () => {
-  const [isIntersecting, setIsIntersecting] = useState(false);
+  const [isIntersecting, setIsIntersecting] = useState<boolean>(false);
+  const [isFundingOpen, setIsFundingOpen] = useState<boolean>(false); // Track the button state
   const targetRef = useRef(null);
 
   useEffect(() => {
@@ -32,31 +34,68 @@ const Navbar = () => {
       }
     };
   }, []);
+
+  const handleFundingClick = () => {
+    setIsFundingOpen((prev) => !prev); // Toggle the button state
+  };
+
   return (
-    <div className="flex justify-center ">
+    <div className="flex justify-center">
       <div
         ref={targetRef}
-        className={`flex justify-between gap-72  mt-7 align-middle transition-opacity duration-[1500ms] ${
+        className={`flex justify-between gap-64 mt-7 align-middle transition-opacity duration-[1500ms] ${
           isIntersecting ? "opacity-100" : "opacity-0"
         }`}
       >
         <div>
-          <h2 className="text-white  mt-2 font-bold text-sm">
+          <h2 className="text-white mt-2 font-bold text-sm">
             <Link href={"#"}> NASSA</Link>
           </h2>
-        </div> 
+        </div>
 
-        <div className="flex justify-center mt-2  gap-12">
+        <div className="flex justify-center mt-2 gap-12">
           <div>
             <h2 className="text-white font-normal text-sm">
               <Link href={"#"}>Home</Link>
             </h2>
           </div>
-          <div>
-            <h2 className="text-white font-normal text-sm">
-              <Link href={"#"}>Create Funding</Link>
-            </h2>
+
+          <div className="relative">
+            <button
+              onClick={handleFundingClick}
+              className="text-white font-normal text-sm flex gap-1 align-middle"
+            >
+              <div>
+                <h3>Create Funding</h3>
+              </div>
+              <div
+                className={`mt-1 transition-transform duration-300 ${
+                  isFundingOpen ? "rotate-180" : ""
+                }`}
+              >
+                <Image alt="arrow" height={10} width={10} src={"/arro.svg"} />
+              </div>
+            </button>
+
+            {/* Conditional rendering for modal */}
+            {isFundingOpen && (
+              <div className="absolute top-full mt-2  bg-[#06030a] p-4 w-32 rounded-2xl shadow-md">
+                <ul className="flex flex-col gap-3 text-gray-700">
+                  <li>
+                    <Link  className="text-white text-sm hover:bg-purple-500 px-2 py-2 rounded-xl" href={"/application-form"} onClick={() => setIsFundingOpen(false)}>
+                      Archaeologist
+                    </Link>
+                  </li>
+                  <li>
+                    <Link  className="text-white text-sm hover:bg-purple-500 px-2 py-2 rounded-xl" href={"/link2"} onClick={() => setIsFundingOpen(false)}>
+                      Museums
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            )}
           </div>
+
           <div>
             <h2 className="text-white font-normal text-sm">
               <Link href={"#"}>Meet the Team </Link>
