@@ -69,6 +69,7 @@ const Page = () => {
           >
             <div className="flex flex-col">
               <label className="text-white text-sm mb-2">Data Transparency</label>
+              {/* jfjjd */}
               <Controller
                 name="dataTransparency"
                 control={control}
