@@ -49,15 +49,13 @@ const GalleryCards = () => {
       <div>
         <h3 className="text-white">
           <Image alt="#" height={200} width={250} src={"/ArtFund.svg"} />
-        </h3>
+        </h3> 
       </div>
-
+      
       <div>
          <GallaryHeading filterType={setTab} type={tab} />
          <ParentBody type={tab} />
-      </div>
-
-     
+      </div>     
     </div>
   );
 };
