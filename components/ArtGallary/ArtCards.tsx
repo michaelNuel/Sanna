@@ -42,7 +42,7 @@ export const CarouselItem: React.FC<CarouselItemProps> = ({
 
       <div className={`mt-2  transition-opacity duration-[1500ms]`}>
         <button className="text-white text-sm bg-[#9747FF] px-8 py-3  rounded-3xl">
-          Get NFT Here
+          Donate NFT Here
         </button>
       </div>
     </div>
@@ -113,7 +113,7 @@ const ArtCards = ({ type }: Props) => {
 
             <div className={`mt-2  transition-opacity duration-[1500ms]`}>
               <button className="text-white text-sm bg-[#9747FF] px-8 py-3  rounded-3xl">
-                Get NFT Here
+                Donate NFT Here
               </button>
             </div>
           </div>
