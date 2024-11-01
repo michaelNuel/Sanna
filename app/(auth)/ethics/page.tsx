@@ -165,7 +165,7 @@ const Ethics = () => {
                                     type="submit" // Submit button for form submission
                                     className="mt-4 bg-purple-500 text-white px-6 py-2 rounded-2xl"
                                 >
-                                    Continue
+                                    Submit
                                 </button>
                             </div>
                         </div>

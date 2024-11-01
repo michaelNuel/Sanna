@@ -83,12 +83,12 @@ const Navbar = () => {
               <div className="absolute top-full mt-2  bg-[#06030a] p-4 w-32 rounded-2xl shadow-md">
                 <ul className="flex flex-col gap-3 text-gray-700">
                   <li>
-                    <Link  className="text-white text-sm hover:bg-purple-500 px-2 py-2 rounded-xl" href={"/project-overview"} onClick={() => setIsFundingOpen(false)}>
+                    <Link  className="text-white text-sm hover:bg-purple-500 px-2 py-2 rounded-xl" href={"/app"} onClick={() => setIsFundingOpen(false)}>
                       Archaeologist
                     </Link>
                   </li>
                   <li>
-                    <Link  className="text-white text-sm hover:bg-purple-500 px-2 py-2 rounded-xl" href={"/link2"} onClick={() => setIsFundingOpen(false)}>
+                    <Link  className="text-white text-sm hover:bg-purple-500 px-2 py-2 rounded-xl" href={"/app"} onClick={() => setIsFundingOpen(false)}>
                       Museums
                     </Link>
                   </li>
