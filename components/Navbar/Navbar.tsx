@@ -1,4 +1,5 @@
 "use client";
+import { ConnectButton } from "@rainbow-me/rainbowkit";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
@@ -114,9 +115,7 @@ const Navbar = () => {
         </div>
 
         <div>
-          <button className="text-white font-normal text-sm bg-purple-500 py-2 p-4 rounded-2xl">
-            Connect Wallet
-          </button>
+            <ConnectButton />
         </div>
       </div>
     </div>

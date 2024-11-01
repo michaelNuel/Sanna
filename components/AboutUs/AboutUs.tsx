@@ -34,7 +34,7 @@ const AboutUs = () => {
   return (
     <div ref={targetRef} className={`h-screen w-full bg-[#d4b4ff] transition-opacity duration-[1500ms] ${isIntersecting ? "opacity-100": "opacity-0"} `}>
       <div className='mx-32 flex justify-center gap-10'>
-         <div className="h-[457px] w-[606px] bg-gray-400 my-20 rounded-2xl"></div>
+         {/* <div className="h-[457px] w-[606px] bg-gray-400 my-20 rounded-2xl"></div> */}
 
          <div className='my-20 flex flex-col gap-6 w-[507]'>
             <div>
